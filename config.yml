@@ -36,8 +36,8 @@ http_timeout: 5.0
 # startup and run under the user and group specified here.
 # Make sure that this user can write the database file (default db.yml),
 # otherwise the server can't update the database.
-user: nobody
-group: nogroup
+user: dns-user
+group: dns-user
 
 # Start of authority information. This is stuff others like to know about
 # this DNS server. The serial is taken from the DB.
@@ -45,7 +45,7 @@ soa:
   # The domain name of our DNS server itself
   nameserver: ns.example.com
   # Mail address of the person responsible for the DNS server
-  mail: dns.admin@example.com
+  mail: sfncook@gmail.com
   # Time to live in seconds of this SOA record. It won't change often so
   # it can be a rather large value (e.g. 86400 = 1 day).
   ttl: 86400
